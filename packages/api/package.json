@@ -1,0 +1,47 @@
+{
+  "name": "api",
+  "private": true,
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "docker:up": "docker compose up --detach --no-recreate --wait",
+    "docker:down": "docker compose down --timeout 5",
+    "prisma:format": "prisma format",
+    "prisma:generate": "prisma generate",
+    "prisma:dev": "yarn docker:up && dotenv -e .env -- prisma migrate dev",
+    "prisma:dev:studio": "yarn docker:up && dotenv -e .env -- prisma studio",
+    "prisma:dev:reset": "yarn docker:up && dotenv -e .env -- prisma migrate reset --force",
+    "prisma:test": "yarn docker:up && dotenv -e .env.test -- prisma migrate reset --force --skip-seed",
+    "prisma:test:studio": "yarn docker:up && dotenv -e .env.test -- prisma studio",
+    "start": "node .",
+    "dev": "yarn prettier && yarn prisma:dev && nodemon .",
+    "prettier": "prettier --write \"{prisma,src,tests}/**/*.js\" --config \".prettierrc\"",
+    "test": "yarn prisma:test && dotenv -e .env.test -- jest --runInBand"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.1.1",
+    "accesscontrol": "^2.2.1",
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "express": "^4.18.1",
+    "helmet": "^5.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "zod": "^3.17.3"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.3.0",
+    "dotenv-cli": "^5.1.0",
+    "jest": "^28.1.1",
+    "nodemon": "^2.0.18",
+    "prettier": "^2.7.1",
+    "prisma": "^4.1.1",
+    "supertest": "^6.2.3"
+  }
+}

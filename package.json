@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "client": "yarn workspace ui dev",
+    "server": "yarn workspace api dev",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\"  \"yarn client\""
+  },
+  "description": "Workspace for this project",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
