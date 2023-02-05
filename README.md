@@ -57,8 +57,4 @@ You should be able to access the frontend (UI) at http://localhost:5173/. (The b
 
 Please see [this short video](https://youtu.be/nwltX0dNzog) that described your task.
 
-When starting a new coding project, it is important to focus on understanding the frameworks and libraries used in order to complete the task. You may not need to understand every line of code, but having a basic understanding of the tools available to you will help you to get the job done more quickly and efficiently.
-
-Starting a new coding project can be intimidating, but it’s important to remember that you don’t need to understand every line of code in order to complete the task. Focus on understanding what you need to know to get the job done and don't get overwhelmed by details that may not be necessary. 
-
-It is helpful to know the frameworks and libraries used in this demo application. You do not need to learn every one, but having a basic understanding of the tools available to you will help you to get the job done more quickly and efficiently.
+Starting a new coding project can be intimidating, but it's important to remember that you don't need to understand every line of code in order to complete the task. Focus on understanding what you need to know to get the job done and familiarize yourself with the frameworks and libraries used in the application - a basic understanding of these tools will help you to get the job done quickly and efficiently without getting overwhelmed by details that may not be necessary.
