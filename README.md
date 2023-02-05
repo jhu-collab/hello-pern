@@ -55,7 +55,7 @@ You should be able to access the frontend (UI) at http://localhost:5173/. (The b
 
 ## Task
 
-Please see [this short video] that described your task.
+Please see [this short video](https://youtu.be/nwltX0dNzog) that described your task.
 
 When starting a new coding project, it is important to focus on understanding the frameworks and libraries used in order to complete the task. You may not need to understand every line of code, but having a basic understanding of the tools available to you will help you to get the job done more quickly and efficiently.
 
